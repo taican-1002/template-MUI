@@ -1,2 +1,2 @@
-User: taicancr&@gmail.com
+User: taicancr7@gmail.com
 Password: taicancr7
