@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1024px) {
+  .MuiPaper-root {
+    overflow: hidden;
   }
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dark {
+  background-color: #000 !important;
+}
+.green {
+  background-color: #26aa80 !important;
+}
+.purple {
+  background-color: #7521d8 !important;
+}
+.pink {
+  background-color: #f431c6 !important;
+}
+.red {
+  background-color: #f4313e !important;
+}
+
+.active {
+  color: #ff6384;
+}
+
+.flex {
+  display: flex;
+}
+
+.form-customers
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.form-customers .MuiInputLabel-root.Mui-focused {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*Customers*/
+.form-filter .form-accordion {
+  padding: 10px 0;
+}
+.form-filter .form-customers {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.customers-paper {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  padding: 40px;
+}
+.customers-paper .customers-actions {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/*Text Field*/
+.text-field .MuiOutlinedInput-input {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: flex-start;
 }
